@@ -1,0 +1,3 @@
+object oriented programming is a computer programming modle that organizes software design around data, or obkects ,
+rather than functions and logic .an object can be defined as a data field that had unique attributes and behaviour
+
