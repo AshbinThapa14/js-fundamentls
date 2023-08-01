@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>this is the heading of the page</h1>
+    <table border="4">
+        <tr>
+            <th colspan="5">11</th>
+        </tr>
+        <tr id="table">
+            <th>10</th>
+            <th>12</th>
+            <th>13</th>
+            <th rowspan="2">14</th>
+            <th>0001010</th>
+
+        </tr>
+        <tr class="common">
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        <th>010101</th>
+        </tr>
+
+    </table>
+    <button id="namm">hey click me</button>
+    <a href="www.ig.com">hello</a>
+    <script>
+        // console.log(document.body.childNodes[0])
+        // console.log(document.body.children[1].)
+
+     //how to access element using id
+
+     console.log(document.getElementById("table"))
+     console.log(document.getElementsByClassName("common"))
+     console.log(document.getElementsByTagName("th"))
+
+     //query selector
+
+    console.log(document.querySelector(".common"))
+    console.log(document.querySelector("tr"))
+    console.log(document.querySelectorAll("th"))
+    //  console.log(document.querySelectorAll("tr> td:first-child"))
+
+     const atrributeValue="www.facebook.com"
+    //  document.getElementsByTagName("a").setattribute("href","www.fb.com")
+    const namedom=document.getElementsByTagName("a")[0]
+    namedom.removeAttribute("href")
+    namedom.setAttribute("href","www.facebook.com")
+    document.getElementsByTagName("h1")[0].remove()
+
+    const buttonclick=document.getElementById("namm")
+
+    buttonclick.addEventListener("mouseenter",(event)=>{
+        document.body.style.backgroundColor="pink";
+    })
+     //49:36
+   </script>
+
+</body>
+</html>
+
+     
+
+
+ 
